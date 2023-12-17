@@ -129,7 +129,7 @@ def minimax_2(board,d,mark1,mark2,isMaximizing):
     if d==0 or checkDraw() or checkWin():
         return valueE(mark1,mark2)    
     if isMaximizing:
-        bestScore = -1
+        bestScore = -10
         for key in board.keys():
             if board[key] == ' ':
                 x.append(1)
